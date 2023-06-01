@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Test Suite">
+
+    <test name="PositiveTest">
+        <parameter name="username"  value="nedved198720@gmail.com "/>
+        <parameter name="password"  value="FxbkO2R"/>
+        <parameter name="expectedMessage"  value=" Товар добавлен в корзину  Открыть "/>
+        <classes>
+            <class name="testassignment.PositiveTest"/>
+        </classes>
+    </test>
+
+    <test name="NegativeTest">
+        <parameter name="username"  value="tomsmith"/>
+        <parameter name="password"  value="12345"/>
+        <parameter name="expectedMessage"  value="Товар в корзине"/>
+        <classes>
+            <class name="testassignment.NegativeTest"/>
+        </classes>
+    </test>
+</suite>
